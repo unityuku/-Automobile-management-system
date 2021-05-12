@@ -1,0 +1,12 @@
+.index_cate {
+  display: flex;
+  background:linear-gradient(to bottom,khaki,lightYellow);
+}
+.index_cate navigator {
+  padding: 10rpx;
+  flex: 1;
+  
+}
+.index_cate navigator image {
+  width: 100%;
+}

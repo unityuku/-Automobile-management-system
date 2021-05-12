@@ -1,0 +1,23 @@
+<view class="ns">商品列表</view>
+<SearchInput></SearchInput>
+<!-- //监听自定义事件· -->
+<Tabs tabs="{{tabs}}" bindtabsTtemChange="handletabsTtemChange">
+  <block wx:if="{{tabs[0].isActive}}">
+  <view class="first_tab">
+    <navigator class="goods_item" wx:for="{{goodsList}}" wx:key="goods_id" url="../goos_detail/index?goods_id={{item.goods_id}}">
+      
+<!-- 左侧图片容器 -->
+<view class="goods_img_warp">
+  <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'//m.360buyimg.com/babel/s268x268_jfs/t1/171231/7/3231/73591/600555d7E2ea5c4dd/397bf27069cbeca4.jpg!q70.dpg'}}"></image>
+</view>
+<!-- 右侧商品容器 -->
+<view class="goods_info_wrap">
+  <view class="goods_name">{{item.goods_name}}</view>
+  <view class="goods_price">￥{{item.goods_price}}</view>
+</view>
+    </navigator>
+  </view>
+  </block>
+  <block wx:elif="{{tabs[1].isActive}}">2</block>
+  <block wx:elif="{{tabs[2].isActive}}">3</block>
+</Tabs>

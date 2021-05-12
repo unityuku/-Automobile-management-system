@@ -1,0 +1,34 @@
+
+page,view,text,swiper,swiper-item,image,navigator{ 
+   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* 主题颜色通过变量来实现 
+less中存在变量
+css wxss也是支持变量*/
+page{
+  --themeColor:#eb4450;
+  /* 定义统一的字体大小 设计稿大小375px
+    1px=2rpx
+    14px =28rpx
+  */
+  font-size: 28rpx;
+}
+image{
+  width: 100%;
+}
+.ns {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 135rpx;
+  text-align:center;
+  line-height: 155rpx; 
+  color: white;
+  font-weight:bold;
+  background:linear-gradient(to right,orangered, orange);
+}
+

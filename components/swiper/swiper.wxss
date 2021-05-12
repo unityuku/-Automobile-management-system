@@ -1,0 +1,10 @@
+.index_swiper swiper {
+margin-top: 220rpx;
+  width: 750rx;
+  height: 233rpx;
+  padding: 15rpx;
+  background:linear-gradient(to bottom, orange,Khaki);
+}
+.index_swiper swiper image {
+  width: 100%;
+}

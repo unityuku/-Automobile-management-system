@@ -1,0 +1,7 @@
+<!--components/cates/cates.wxml-->
+<view class="index_cate">
+  <navigator wx:for="{{catesList}}" wx:key="name">
+    
+    <image mode="widthFix" src="{{item.image_src}}"></image>
+  </navigator>
+</view>

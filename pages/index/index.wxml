@@ -1,0 +1,13 @@
+<view class="ns">优选</view>
+<view class="pyg_index">
+  <!-- 搜索框结构 -->
+  <SearchInput></SearchInput>
+  <!-- 轮播图 -->
+  <view class="swiper-container">
+    <index-swiper imgUrls="{{imgUrls}}"></index-swiper>
+  </view>
+  <!--导航栏 -->
+    <index-cates catesList="{{catesList}}"></index-cates>
+    <!-- 楼层 -->
+    <index-floor floorList="{{floorList}}"></index-floor>
+</view>

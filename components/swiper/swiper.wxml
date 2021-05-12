@@ -1,0 +1,10 @@
+<view class="index_swiper">
+  <swiper autoplay="true" interval="5000" circular="true" indicator-dots="true"> 
+    <swiper-item wx:for="{{imgUrls}}" wx:key="index">
+        <navigator>
+        <image src="{{item}}" class="slide-image" width="750rpx" mode="widthFix"/>
+      </navigator>
+      </swiper-item>
+  </swiper>
+</view>
+<!-- 426*144 -->
